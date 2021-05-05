@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="signy_sdk_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/signy_sdk_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/signy_sdk_colorPrimaryDark</item>
+        <item name="colorAccent">@color/signy_sdk_colorAccent</item>
+    </style>
+
+</resources>

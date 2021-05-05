@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.addDocument.singCaptureDocument">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Capture Document">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivFlipCamera"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:src="@drawable/signy_sdk_ic_camera_flip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/show_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="@string/signy_sdk_please_place_the_doc"
+
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/mPreview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_10sdp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:.7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/mrzCover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_55sdp"
+        android:background="@color/signy_sdk_black_alpha2"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/mPreview"
+        app:layout_constraintEnd_toEndOf="@id/mPreview"
+        app:layout_constraintStart_toStartOf="@id/mPreview"
+        app:layout_constraintTop_toTopOf="@id/mPreview" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ivPlaceHolder"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:padding="@dimen/_2sdp"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:src="@drawable/passport_placeholder"-->
+
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mPreview"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/mPreview"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/mPreview"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/mPreview" />-->
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:text="@string/signy_sdk_capture"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivToggleCamera"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:src="@drawable/signy_sdk_ic_camera_flip"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnCapture"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/signy_sdk_bg_white_card_round"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:textColor="@color/signy_sdk_green"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:paddingStart="16dp"
+        android:paddingEnd="14dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_retry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/signy_sdk_fail"
+        android:text="@string/signy_sdk_retry"
+        android:textColor="@color/signy_sdk_white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:backgroundTint="@color/signy_sdk_white"
+        android:text="@string/signy_sdk_ok"
+
+        android:textSize="18sp" />
+
+</LinearLayout>

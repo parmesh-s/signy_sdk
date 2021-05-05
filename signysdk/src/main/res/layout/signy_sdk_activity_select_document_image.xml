@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.addDocument.SelectDocumentImageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Add Document" />
+
+
+    <TextView
+        android:id="@+id/tvStart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_3sdp"
+        android:text="*"
+        android:textColor="@color/signy_sdk_red"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvDocument1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/signy_sdk_upload_front_image"
+        android:drawablePadding="@dimen/_6sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/signy_sdk_upload_front_image"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintStart_toEndOf="@+id/tvStart1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDocumentName"
+        app:layout_constraintTop_toTopOf="@+id/tvStart1" />
+
+    <ImageView
+        android:id="@+id/ic_info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/signy_sdk_ic_info"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDocument1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvDocument1" />
+
+    <TextView
+        android:id="@+id/tvStart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_3sdp"
+        android:text="*"
+        android:textColor="@color/signy_sdk_red"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvDocument1" />
+
+    <TextView
+        android:id="@+id/tvDocument2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:contentDescription="@string/signy_sdk_upload_back_image"
+        android:drawablePadding="@dimen/_6sdp"
+        android:paddingTop="@dimen/_10sdp"
+
+        android:paddingEnd="@dimen/_16sdp"
+
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/signy_sdk_upload_back_image"
+        android:textSize="@dimen/_13sdp"
+
+        app:layout_constraintStart_toEndOf="@+id/tvStart2"
+        app:layout_constraintTop_toBottomOf="@+id/tvDocument1" />
+
+    <ImageView
+        android:id="@+id/ic_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/signy_sdk_ic_info"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDocument2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvDocument2" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:backgroundTint="@color/signy_sdk_colorPrimary"
+        android:text="Next"
+        android:textColor="@color/signy_sdk_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_26sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_26sdp" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signy_sdk_bg_white_card_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

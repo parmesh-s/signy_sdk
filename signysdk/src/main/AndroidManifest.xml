@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.signy.signysdk">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+
+        android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity  android:name=".activity.addDocument.DocFields" android:theme="@style/signy_sdk_AppTheme"></activity>
+        <activity android:name=".activity.Liveliness" android:theme="@style/signy_sdk_AppTheme"  />
+        <activity android:name=".activity.addDocument.CaptureDocument"  android:theme="@style/signy_sdk_AppTheme" />
+        <activity android:name=".activity.addDocument.SelectDocumentImageActivity"  android:theme="@style/signy_sdk_AppTheme" />
+        <activity android:name=".activity.addDocument.SelectDocumentActivity" android:theme="@style/signy_sdk_AppTheme"  />
+    </application>
+
+</manifest>

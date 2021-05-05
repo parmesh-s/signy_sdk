@@ -1,0 +1,30 @@
+<resources>
+    <string name="signy_sdk_app_name">SignySDK</string>
+
+
+    <string name="signy_sdk_blink_msg">Please blink your eyes</string>
+    <string name="signy_sdk_field_type">type</string>
+    <string name="signy_sdk_field_label">label</string>
+    <string name="signy_sdk_field_name">name</string>
+    <string name="signy_sdk_field_required">required</string>
+    <string name="signy_sdk_field_value">value</string>
+    <string name="signy_sdk_ok">OK</string>
+    <string name="signy_sdk_capture">Capture</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="signy_sdk_hello_blank_fragment">Hello blank fragment</string>
+    <string name="signy_sdk_cancel">Cancel</string>
+    <string name="signy_sdk_upload_using_gallery">Phone Library</string>
+    <string name="signy_sdk_upload_using_camera">Camera</string>
+    <string name="signy_sdk_next">Next</string>
+    <string name="signy_sdk_upload_front_image">Front Page</string>
+    <string name="signy_sdk_upload_back_image">Back Page</string>
+    <string name="signy_sdk_upload_selfie">Selfie with document</string>
+    <string name="signy_sdk_details">Details</string>
+    <string name="signy_sdk_start_facematch_msg">Please fit your face in below oval and press START LIVELINESS Button</string>
+    <string name="signy_sdk_retry">Retry</string>
+    <string name="signy_sdk_detail_retry_option">Click on next if the extract information is correct or retry to extract the information correctly.</string>
+    <string name="signy_sdk_verified_by_self_msg">Self verified by user</string>
+    <string name="signy_sdk_verified_by_ai_msg">Verified by AI agent using</string>
+    <string name="signy_sdk_please_place_the_doc">Please place the document in the shown box and capture the image</string>
+    <string name="signy_sdk_liveliness_test">Liveliness Test</string>
+</resources>
