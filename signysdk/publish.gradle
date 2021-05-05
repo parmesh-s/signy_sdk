@@ -30,28 +30,28 @@ publishing {
         }
     }
 }
-
-bintray {
-    user = "parmesh-shiroya"
-    key = "0c964692c1028da2b515d9ec172efd7d45f90e0a"
-    publications = ['Production']
-    configurations = ['archives']
-    // Default: false. Whether to run this as dry-run, without deploying
-    dryRun = false
-    // Default: false. Whether to override version artifacts already published
-    override = false
-    // Default: false. Whether version should be auto published after an upload
-    publish = true
-    pkg {
-        userOrg = 'signyadvanced'
-        repo = 'Signy_SDK' // the name of the repository you created on Bintray
-        name = 'io.signy.signysdk' // the name of the package you created inside it
-        licenses = ['Apache-2.0']
-        vcsUrl = 'https://parmeshS@bitbucket.org/tbchaindev/signy_sdk.git'
-        version {
-            name = this.version
-            released = new Date()
-            vcsTag = this.version
-        }
-    }
-}
+//
+//bintray {
+//    user = "parmesh-shiroya"
+//    key = "0c964692c1028da2b515d9ec172efd7d45f90e0a"
+//    publications = ['Production']
+//    configurations = ['archives']
+//    // Default: false. Whether to run this as dry-run, without deploying
+//    dryRun = false
+//    // Default: false. Whether to override version artifacts already published
+//    override = false
+//    // Default: false. Whether version should be auto published after an upload
+//    publish = true
+//    pkg {
+//        userOrg = 'signyadvanced'
+//        repo = 'Signy_SDK' // the name of the repository you created on Bintray
+//        name = 'io.signy.signysdk' // the name of the package you created inside it
+//        licenses = ['Apache-2.0']
+//        vcsUrl = 'https://parmeshS@bitbucket.org/tbchaindev/signy_sdk.git'
+//        version {
+//            name = this.version
+//            released = new Date()
+//            vcsTag = this.version
+//        }
+//    }
+//}
