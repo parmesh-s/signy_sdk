@@ -182,7 +182,7 @@ class Liveliness : BaseActivity(), OnBitmapReceived {
         mCameraSource = CameraSource.Builder(context, myFaceDetector)
 
             .setRequestedPreviewSize(width, height)
-            .setFacing(CameraSource.CAMERA_FACING_BACK)
+            .setFacing(CameraSource.CAMERA_FACING_FRONT)
             .setRequestedFps(30.0f)
             .build()
     }
